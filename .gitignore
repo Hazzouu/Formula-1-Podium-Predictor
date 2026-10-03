@@ -1,0 +1,14 @@
+data/raw/*
+data/interim/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+models/*
+!models/.gitkeep
+results/figures/*
+!results/figures/.gitkeep
+podium.ipynb
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.DS_Store
+graphify-out/
