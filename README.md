@@ -30,10 +30,16 @@ Optional per person: the ponytail *plugin* (injects its rules every turn, strong
 Either way, CLAUDE.md rule 7 limits it: it never removes trial or justification cells.
 
 ## Daily workflow
+0. Write the brief in `briefs/NN_*.md` (planned in the claude.ai Project chat), then tell Claude Code:
+   *"Implement briefs/04_features.md"*. Claude Code writes the code; the team makes the decisions.
 1. `git checkout -b sec/04-features`
 2. Edit `sections/04_features.py` (open it as a notebook in VS Code/Jupyter via jupytext, or edit as text).
 3. `python scripts/build_notebook.py --execute` — must pass.
 4. Open a PR; the section owner reviews.
+
+No brief? Prompt Claude Code however you like. CLAUDE.md makes it check `decisions.md` before any design choice,
+ask you instead of deciding silently, and update `findings/` when it finishes. Read `decisions.md` and `findings/`
+before the evaluation: anyone can be asked about any step.
 
 **Never commit `podium.ipynb` edits by hand** — it is generated. Upload the built notebook to Kaggle.
 

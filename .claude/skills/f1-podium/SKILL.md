@@ -20,7 +20,9 @@ Before any non-trivial choice (rule, feature, model, encoding, imputation), pres
 2. **Reasoning:** trade-offs for *this* data (era drift, class imbalance ~15% or lower, qualifying coverage gaps).
 3. **Recommendation:** one choice, and why.
 
-After the team picks one, record it in `decisions.md`: decision, date, owner, evidence cell.
+Wait for the person's choice — never pick for them. Then record it in `decisions.md`: decision, date,
+who decided, evidence cell. When the section's work is done, update `findings/NN_<section>.md`
+(template: `findings/_template.md`).
 
 ## Writing a section file
 - Jupytext percent format. Markdown cells: `# %% [markdown]`, code cells: `# %%`.
